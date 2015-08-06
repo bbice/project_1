@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About me.</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Hi! I'm Brian!</h1>
+
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#mtb">Mountain Biking</a></li>
+        <li><a href="#trav">Traveling</a></li>
+        <li><a href="#gam">Gaming</a></li>
+      </ul>
+    </nav>
+
+    <article>
+      <h2 id="mtb">Mountain Biking</h2>
+        <img src="images/mtb.jpg" alt="My Bike">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat odio ut libero pulvinar consectetur. Cras quis ultricies lorem. Ut scelerisque ac nulla et ultricies. Cras quis arcu eget risus interdum posuere non eget est. Maecenas non consequat neque. Integer nec diam enim. Etiam posuere, nisi ut hendrerit ullamcorper, lacus ipsum fermentum ligula, aliquet luctus purus augue scelerisque tortor. Curabitur eu sollicitudin quam, id ornare velit. Morbi sed rutrum arcu, a eleifend magna. Nunc ac dictum quam. Sed varius pellentesque nulla non condimentum. Aenean neque mauris, accumsan in magna nec, ultricies molestie neque. Fusce sollicitudin sapien odio, nec faucibus quam pretium sit ame.</p>
+      </article>
+
+      <article>
+        <h2 id="trav">Traveling</h2>
+          <img src="images/travel.jpg" alt="Georgia!">
+          <p>Nulla sagittis nunc et ligula facilisis, eget egestas nibh scelerisque. Proin congue tortor et elit tempor, ac convallis est pulvinar. Aliquam tristique, ex non lacinia scelerisque, turpis mi tincidunt nisi, quis porta justo ex elementum ex. Suspendisse consequat cursus suscipit. Suspendisse vestibulum eleifend magna in convallis. Aliquam posuere nunc eu mi feugiat dictum. Aenean eget arcu justo. Duis suscipit consequat commodo. Aliquam bibendum, nisl eget mollis porta, augue nisl tincidunt felis, ut condimentum tellus sem eu quam. Sed nec orci mauris. Aliquam ac congue tortor.</p>
+       </article>
+
+      <article>
+        <h2 id="gam">Gaming</h2>
+          <img src="images/gaming.jpg" alt="Games!">
+          <p>Etiam viverra hendrerit aliquam. Aliquam sed metus quis purus malesuada fermentum quis ac turpis. Nam ac sagittis tortor. Aenean purus ipsum, bibendum sed semper nec, tincidunt sed dolor. Phasellus et vestibulum purus, ac posuere elit. Quisque maximus dui at convallis finibus. Morbi hendrerit gravida lacinia. Morbi eu tortor luctus, pharetra quam in, ultrices mauris. In id elementum lorem, ac semper arcu. Sed dignissim commodo augue eu vestibulum. Curabitur nec eleifend mi. Proin id nulla in urna tristique condimentum et eu diam. Donec nulla neque, fermentum vitae fermentum vitae, fringilla vitae massa. Proin vitae dolor arcu.</p>
+      </article>
+
+      <footer>
+        <h1>So sorry that this page is so ugly!</h1>
+        <p id='foot'>I will definitely get better at styling.. </p>
+      </footer>
+
+    <script type="text/javascript">
+      function guessGame(){
+        var message, answer, guess;
+        answer = ['mountain biking', 'traveling', 'gaming'];
+        guess = prompt('So you wanted to know a little more about me? What would you like to know about - mountain biking? traveling? gaming?');
+
+        if (guess === answer[0]) {
+          message = 'I love mountain biking! It\'s really more of a lifestyle than a hobby..';
+        } else if (guess === answer[1]){
+          message = 'Traveling is great. I\'ve been to over 30 countries with my wife. If you want to learn more check out my blog -http://howilearnedtostopworrying.com/';
+        } else if (guess === answer[2]) {
+          message = 'Gaming is good fun. I like board games, tabletop RPGs and video games. We should play some time!';
+        } else {
+          message = 'I\'m not here to talk about that. :P';
+        };
+        alert(message);
+      };
+      guessGame();
+    </script>
+    <input type ='button' value='Click here to ask another question.' onclick='guessGame();'>
+  </body>
+</html>
