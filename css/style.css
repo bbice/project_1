@@ -47,6 +47,10 @@ p {
   box-shadow: 10px 10px 5px #888888;
 }
 
+p:hover{
+  background-color: #66FFFF;
+}
+
 h2 {
   clear: left;
   margin: 5px;
